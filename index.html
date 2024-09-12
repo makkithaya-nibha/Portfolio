@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibha Makkithaya Resume Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this link somewhere in your index.html -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Nibha Makkithaya's Resume Chatbot</h1>
+        <div class="chatbox">
+            <div id="chat-log" class="drop-area"></div>
+            <input type="text" id="user-input" placeholder="Drag drop buttons here..." autofocus>
+            <button onclick="getResponse()">Send</button>
+        </div>
+        <div class="button-container">
+            <button id="btn-experience" draggable="true" ondragstart="drag(event)">Experience</button>
+            <button id="btn-skills" draggable="true" ondragstart="drag(event)">Skills</button>
+            <button id="btn-projects" draggable="true" ondragstart="drag(event)">Projects</button>
+            <button id="btn-extracurriculars" draggable="true" ondragstart="drag(event)">Extracurriculars</button>
+            <button id="btn-contact" draggable="true" ondragstart="drag(event)">Contact</button>
+            <button id="btn-quantitative-momentum" draggable="true" ondragstart="drag(event)">Quantitative Momentum</button>
+            <button id="btn-quantitative-value" draggable="true" ondragstart="drag(event)">Quantitative Value</button>
+            <button id="btn-european-options" draggable="true" ondragstart="drag(event)">European Options</button>
+            <button id="btn-dinoai" draggable="true" ondragstart="drag(event)">DinoAI</button>
+            <button id="btn-marioai" draggable="true" ondragstart="drag(event)">MarioAI</button>
+            <button id="btn-streetfighterrl" draggable="true" ondragstart="drag(event)">StreetFighterRL</button>
+            <button id="btn-tableau-projects" draggable="true" ondragstart="drag(event)">Tableau Projects</button>
+            <button id="btn-research-intern" draggable="true" ondragstart="drag(event)">Research Intern</button>
+            <button id="btn-3d-vr-intern" draggable="true" ondragstart="drag(event)">3D VR Intern</button>
+            <button id="btn-research-collaborator" draggable="true" ondragstart="drag(event)">Research Collaborator</button>
+            <button id="btn-investment-banking" draggable="true" ondragstart="drag(event)">Investment Banking</button>
+            <button id="btn-corporate-analyst" draggable="true" ondragstart="drag(event)">Corporate Analyst</button>
+        </div>
+    </div>
+<script src="chatbot.js"></script>
+</body>
+</html>
