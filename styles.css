@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4ed; /* Pastel Pink Background */
+    color: #4a148c; /* Darker Purple Text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f1f7; /* Light pastel pink for containers */
+    border-radius: 8px;
+    border: 1px solid #d6a8d2; /* Slightly darker pink border */
+}
+
+/* Heading Styles */
+h1, .job-compatibility-section h2 {
+    text-align: center;
+    color: #6a1b9a; /* Slightly darker purple */
+}
+
+/* Chatbox and Drop Area Styles */
+.chatbox {
+    background-color: hsl(289, 91%, 18%); /* Light pastel purple */
+    border: 1px solid #d1c4e9; /* Light purple border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.drop-area {
+    background-color: #f2e6f4; /* Pastel Purple */
+    border: 1px dashed #580367; /* Light Purple dashed border */
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Form and Button Styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d6a8d2; /* Pastel pink border */
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #f9f1f7; /* Light pastel pink */
+    color: #333;
+}
+
+input:focus, textarea:focus {
+    border-color: #6a1b9a; /* Pastel purple border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.3); /* Light shadow effect */
+}
+
+button {
+    background-color: #f0dcf4; /* Pastel Purple */
+    color: #34046f; /* Darker Purple Text */
+    border: 5px solid #53046b; /* Darker Purple Border */
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #480658; /* Darker Purple on Hover */
+    border-color: #7b1fa2; /* Darker border color on hover */
+    color: aliceblue;
+}
+
+button:active {
+    background-color: #480658; /* Darker purple */
+    border-color: #4a148c; /* Darker border color */
+}
+
+/* Button Containers */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience-buttons, .projects-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.draggable {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Job Compatibility Section */
+
+
+/* Responsive Design for Job Compatibility Section */
+
+
+.job-description{
+    background-color: hsl(289, 91%, 18%); /* Light pastel purple */
+    border: 1px solid #d1c4e9; /* Light purple border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+
+}
+/* Navigation Button */
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a1b9a; /* Pastel purple color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background-color: #4a148c; /* Darker purple for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input[type="text"], textarea {
+        width: calc(100% - 20px);
+    }
+
+    .job-compatibility-section {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
